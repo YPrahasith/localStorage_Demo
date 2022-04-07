@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> Local Storage Demo </he
+<body>
+
+    <script>
+        i = 0;
+        function count() {
+            i += 1
+            console.log(i)
+            if (typeof (Storage) !== "undefined") {
+                // Store
+                localStorage.setItem("count", i);
+            }
+        }
+    </script>
+    <h1> Action site to store </h1>
+    <p> Click on the button, and the number of times the button is clicked will be passed as an argument using local storage to results html page <p>
+    <br />
+    <button onClick="count()">Count</button>
+
+</body>
+
+</html>
