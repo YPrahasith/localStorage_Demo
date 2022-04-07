@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1> Results Site to Display parameter passed using LocalStorage</h1>
+    <div> The number of times the button was clicked is <span id="result"></span></div>
+
+    <script>
+        if (typeof (Storage) !== "undefined") {
+            document.getElementById("result").innerHTML = localStorage.getItem("count");
+        } else {
+            document.getElementById("result").innerHTML = "Browser does not support Web Storage.";
+        }
+    </script>
+
+</body>
+
+</html>
